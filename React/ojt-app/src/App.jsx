@@ -144,7 +144,7 @@ const Home = ({ formData, setFormData, isSubmitting, handleContactSubmit }) => {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Email Address</label>
+                  <label>Email Addressess</label>
                   <input 
                     type="email" 
                     value={formData.email}
