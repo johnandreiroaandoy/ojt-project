@@ -200,11 +200,11 @@ function App() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost/PROJECT%20(OJT)/save_inquiry.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch('http://localhost/PROJECT-OJT/save_inquiry.php', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(formData),
+});
       const result = await response.json();
       
       if (result.status === "success") {
